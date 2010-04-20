@@ -1,0 +1,929 @@
+@charset "utf8";
+h1{
+    font-size:180%;
+    color:#FD7800;
+    font-weight:bolder;
+}
+h2{
+    font-size:135%;
+    color:#4D2400;
+    font-family: TimesNewRoman, Serif;
+    font-weight:bold;
+}
+h3{
+    font-size:180%;
+    color:#4D2400;
+    font-family: TimesNewRoman, Serif;
+    font-weight:bold;
+}
+h4{
+    font-size:180%;
+    color:#04257B;
+    font-family: TimesNewRoman, Serif;
+    font-weight:bold;
+}
+h5{
+    font-size:130%;
+    font-weight:bold;
+    color:#00257B;
+}
+h6{
+    font-size:180%;
+    color:#752903;
+    font-weight:bolder;
+}
+h7{
+    font-size:165%;
+    color:#04257B;
+    font-weight:bold;
+}
+.float-left{
+    float:left;
+}
+.title{
+    margin-top:20px;
+    margin-left:20px;
+}
+.title2{
+    margin-top:20px;
+    margin-left:5px;
+}
+textarea{
+    border:none;
+    background:transparent;
+    color:#4D2400;
+}
+.title3{
+    font-size:145%;
+    color:#04257B;
+    font-family: TimesNewRoman, Serif;
+    font-weight:bold;
+}
+
+
+/*--------------------------Input------------------------*/
+.inputbox1{
+    background:url(../images/box2.png) no-repeat top left;
+    height:28px;
+}
+    .inputbox1 input{
+        width:130px;
+        padding-right:10px;
+        margin-top:5px;
+        margin-left:8px;
+    }
+.newsbox .inputbox1{
+    margin-top:-24px;
+    margin-left:40px;
+}
+    .newsbox input{
+        margin-left:7px;
+        margin-top:6px;
+    }
+.inputbox3{
+    background:url(../images/box3.png) no-repeat bottom center;
+    height:47px;
+    margin-left:-8px;
+}
+    .inputbox3 input{
+        width:53px;
+        margin-top:5px;
+        margin-left:6px;
+    }
+.inputbox4{
+    background:url(../images/box4.png) no-repeat bottom center;
+    height:47px;
+    margin-left:-8px;
+}
+    .inputbox4 select{
+        width:35px;
+        margin-top:5px;
+        margin-left:6px;
+        border:none;
+        background:transparent;
+    }
+.inputbox5{
+    background:url(../images/box1.png) no-repeat top center;
+    height:28px;
+    margin-left:25px;
+    float:right;
+    padding-left: 10px;
+}
+    .inputbox5 input{
+        width:130px;
+        margin-top:5px;
+        margin-left:10px;
+    }
+.inputbox6{
+    height:20px;
+    margin-top:5px;
+    margin-left:20px;
+}
+    .inputbox6 select{
+        margin:0;
+        width:150px;
+        border:1px solid;
+    }
+.inputbox7{
+    background:url(../images/box5.png) no-repeat top center;
+    height:28px;
+    margin-left:-10px;
+}
+    .inputbox7 input{
+        width:155px;
+        margin:5px 0 0 18px;
+    }
+.inputbox8{
+    background:url(../images/box6.png) no-repeat top center;
+    height:28px;
+    width:83px;
+    float:left;
+    margin-right:10px;
+}
+    .inputbox8 img{
+        margin:5px 0 0 5px;
+    }
+    .inputbox8 input{
+        width:55px;
+    }
+    .catcha .inputbox8 input{
+        width:68px;
+        margin:6px 0 0 7px;
+    }
+    .inputbox8 select{
+        width:70px;
+        margin-left:5px;
+    }
+.inputbox9{
+    background:url(../images/box_textarea1.png) no-repeat top center;
+    height:65px;
+    width:361px;
+    float:left;
+    margin-right:10px;
+}
+    .inputbox9 textarea{
+        height:45px;
+        width:340px;
+        margin-left:5px;
+        overflow:hidden;
+        font-size:120%;
+    }
+.inputbox-10{
+    background:url(../images/box7.png) no-repeat top center;
+    height:28px;
+    width:235px;
+    float:right;
+    margin-right:10px;
+}
+.inputbox-10 input{
+    width:220px;
+    margin:6px 0 0 6px;
+}
+.inputbox-11{
+    background:url(../images/box_textarea2.png) no-repeat top center;
+    height:93px;
+    width:235px;
+    float:right;
+    margin-right:10px;
+}
+    .inputbox-11 textarea{
+        height:75px;
+        width:215px;
+        margin-left:5px;
+        font-size:95%;
+        overflow:hidden;
+    }
+/*--------------------------FIN Input------------------------*/
+
+/*--------------------------Button------------------------*/
+.button{
+    text-align:center;
+    font-size:100%;
+    color:#ffffff;
+    padding-bottom:4px;
+    height:20px;
+    border:none;
+}
+.button1{
+    margin:10px 0 0 35px;
+    margin-left:0 !important;
+    background:url(../images/button1.png) no-repeat top center;
+}
+
+.button2{
+    margin:30px 0 0 -10px;
+    background:url(../images/button2.png) no-repeat top center;
+    width:76px;
+}
+.button3{
+    background:url(../images/button3.png) no-repeat top center;
+    margin-top:-10px;
+}
+.button4{
+    background:url(../images/button5_adjuntar.png) no-repeat top center;
+    width:118px;
+}
+.button5{
+    margin:10px 0 0 35px;
+    background:url(../images/button4.png) no-repeat top center;
+    width:57px;
+}
+.newsbox .button1{
+    margin-top:-25px;
+}
+.row .button2{
+    margin-top: 5px;
+}
+/*--------------------------FIN Button------------------------*/
+
+/*--------------------------Header------------------------*/
+.top-header{
+    margin-top:30px;
+}
+    .top-header .menu-top li{
+        width:90px;
+        display:inline-block;
+        border-right:1px solid #333333;
+        list-style:none;
+        text-align:center;
+        font-size:100%;
+    }
+     .top-header .menu-top .outline{
+        width:150px;
+        border-right:none;
+    }
+    .container-weather{
+        height:134px;
+        background:url(../images/background_weather.png) no-repeat top center;
+        margin-left:-10px;
+    }
+        .container-weather .weather-left{
+            margin-left:40px;
+            margin-top:10px;
+            float:left;
+        }
+            .container-weather .weather-left ul{
+                    margin-top:-20px;
+             }
+                .container-weather .weather-left li{
+                    width:60px;
+                    list-style:none;
+                    margin-left:-20px;
+                    padding-bottom:2px;
+                    border-bottom:1px solid #00257B;
+                    margin-bottom:3px;
+                }
+         .container-weather .weather-icon{
+            float:left;
+            padding-top:40px;
+        }
+.banner{
+    float:left;
+    width:460px;
+}
+
+/*--------------------------FIN Header------------------------*/
+
+/*--------------------------Login------------------------*/
+.top-header .login{
+    margin-top:10px;
+}
+.top-header .login .new-account{
+    float:left;
+    margin-right:30px;
+}
+   /* .header .top-header .login .container-login .content-login{
+        position:relative;
+        clear:left;
+   }*/
+/*--------------------------FIN Login------------------------*/
+
+
+/*--------------------------Menu------------------------*/
+/*.background_menu{
+    background: url(../images/background_menu.png) no-repeat top left;
+    width:976px;
+}*/
+.menu{
+    float:left;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding-top:10px;
+}
+    .menu ul{
+        width:950px;
+        margin:0 auto;
+    }
+        .menu li{
+            display:inline-block;
+            height:31px;
+            margin-right:5px;
+            background: url(../images/line_menu.png) no-repeat right center;
+            color:#FF7900;
+            font-weight:100;
+        }
+            .menu li .icon-menu{
+                float:right;
+                margin-top:-20px;
+                margin-right:10px;
+            }
+/*--------------------------FIN Menu------------------------*/
+
+/*--------------------------Container left------------------------*/
+.fly{
+    background: url(../images/background_fly.png) no-repeat top left;
+    margin-left:5px;
+    height:257px;
+}
+    .fly .photos-search{
+        margin:32px 0 0 12px;
+    }
+    .fly .search-fly{
+        padding:40px 0 0 30px;
+    }
+    .fly .search-fly span{
+        font-size:100%;
+        color:#4D2400;
+        font-family: TimesNewRoman, Serif;
+        font-weight:bold;
+        margin-left:7px;
+    }
+    .fly .search-fly .row{
+        font-size:70%;
+    }
+
+.column-left{
+    margin-top:20px;
+    margin-left:15px;
+    font-size:80%;
+    border-bottom:1px solid #B1A08E;
+}
+.column-right{
+    margin-top:20px;
+    font-size:80%;
+    border-bottom:1px solid #B1A08E;
+}
+    .destacados .description{
+        padding-bottom:5px;
+    }
+        .destacados .description a{
+            font-size:120%;
+            color:#FF7900;
+            font-style:italic;
+        }
+        .destacados .description a:hover{
+            text-decoration:underline;
+        }
+    .destacados .picture{
+        border:1px solid #B1A08E;
+        height:65px;
+        background-color:#ffffff;
+        padding:5px 0 0 5px;
+    }
+    .container-google{
+        margin-top:20px;
+    }
+        .container-google .map-google{
+            background:url(../images/background_google.png) no-repeat top left;
+            height:378px;
+        }
+        .container-google .publicity-vertical{
+            background-color:#ffffff;
+            margin-top:25px;
+            height:342px;
+        }
+    .news {
+        margin-left:17px;
+        float:left;
+    }
+        .news .column-news p{
+            text-align:left;
+            font-size:100%;
+            color:#5084D7;
+            font-style:italic;
+            font-family: TimesNewRoman, Serif;
+            border-bottom:1px dashed #999999;
+            padding-bottom:5px;
+            margin-top:-20px;
+            margin-right:6px;
+         }
+/*--------------------------FIN Container left------------------------*/
+
+
+/*--------------------------Container right------------------------*/
+.search{
+    background: url(../images/background-search.png) no-repeat top left;
+    height:129px;
+    margin-top:17px;
+}
+    .search-left{
+        margin-top: 25px;
+    }
+    .search-left .subtitle{
+        margin-top: 3px;
+        margin-left: -10px;
+    }
+    .search-left .subtitle span{
+        font-size:120%;
+        color:#4D2400;
+        font-family: TimesNewRoman, Serif;
+        font-weight:bold;
+    }
+
+.newsletter{
+    background: url(../images/background-news.png) no-repeat top left;
+    height:108px;
+}
+.newsbox{
+    margin-left:20px;
+}
+    .newsbox span{
+        font-family: TimesNewRoman, Serif;
+        font-size:100%;
+        color:#4D2400;
+        font-weight:bold;
+    }
+
+.publicity{
+    background-color:#fff;
+    height:180px;
+    margin-top:25px;
+    margin-left:7px;
+    float:left;
+}
+.change{
+    background:url(../images/background-change.png) no-repeat top left;
+    height:172px;
+    margin-top:25px;
+}
+.container-twitter{
+    margin-top:25px;
+}
+.city{
+    background:url(../images/background-destinations.png) no-repeat top left;
+    height:295px;
+}
+.twitter{
+    background:url(../images/background_twitter.png) no-repeat top left;
+    height:295px;
+    margin-top:-8px;
+}
+.title-change{
+    margin-left:20px;
+    margin-top:5px;
+}
+.column-coins{
+    margin-left:5px;
+    margin-top:27px;
+    color:#5585D7;
+    font-size:100%;
+}
+    .column-coins img{
+        Float:right;
+    }
+    .column-coins li{
+        list-style:none;
+        margin-bottom:15px;
+    }
+.column-change{
+    margin-left:5px;
+    margin-top:5px;
+    color:#5585D7;
+    font-size:100%;
+    text-align:center;
+}
+    .column-change .t1{
+        margin-bottom:-20px;
+        color:#E55302;
+    }
+    .column-change li{
+        list-style:none;
+        margin-bottom:17px;
+    }
+.city .t2{
+        font-size:140%;
+        color:#fff;
+        font-weight:bold;
+        margin-left:18px;
+        margin-top:10px;
+}
+    .city .destinations{
+            margin-top:30px;
+    }
+    .city .destinations li{
+            margin-bottom:10px;
+            list-style:url(../images/image_list.png);
+            margin-left:20px;
+    }
+    .city .destinations a{
+            color:#FF7900;
+    }
+.twitter{
+    padding-top:60px;
+}
+    .twitter .row-twitter{
+        margin-left:20px;
+        margin-bottom:6px;
+    }
+        .twitter p{
+            font-size:120%;
+            color:#fff;
+            font-weight:bold;
+            margin-bottom:5px;
+        }
+        .twitter span{
+            font-size:90%;
+            color:#00257B;
+            text-align:left;
+        }
+/*--------------------------FIN Container right------------------------*/
+
+
+/*--------------------------Footer------------------------*/
+.information {
+    background:url(../images/background_footer.png) repeat-x top left;
+    height:260px;
+    margin-top:15px;
+}
+    .information .container-info .info-left li{
+        list-style:none;
+        list-style-image:url(../images/image_list.png);
+    }
+        .information .container-info .info-left li a{
+            font-size:120%;
+            color:#4D2400;
+            font-family: TimesNewRoman, Serif;
+            font-weight:bold;
+        }
+    .information .container-info .info-right{
+        float:right;
+        margin-top:40px;
+    }
+        .information .container-info .info-right li{
+            list-style:none;
+        }
+.webs{
+    border-bottom:1px dashed #999999;
+    margin-bottom:5px;
+}
+    .webs .column-webs{
+        margin-top:-15px;
+        margin-left:15px;
+    }
+    .webs .column-webs a{
+        color:#5585D7;
+        font-size:90%;
+    }
+        .webs .column-webs p{
+            margin-bottom:5px;
+        }
+.legal-info {
+    color:#00257B;
+    text-align:center;
+    font-size:90%;
+}
+.legal-info p{
+    margin-top:5px;
+}
+
+/*--------------------------FIN Footer------------------------*/
+
+/*--------------------------Detalle de Propiedades------------------------*/
+.properties{
+    margin-top:26px;
+}
+    .properties span{
+        font-size:90%;
+        color:#4D2400;
+        margin-top: -20px;
+    }
+    .properties-left{
+        margin-left:20px;
+    }
+        .properties-left .properties-image{
+            border: 1px solid #C9BEB7;
+            height: 140px;
+            text-align: center;
+            padding-top: 5px;
+            background-color:#fff;
+        }
+        .properties-right .properties-info{
+            background-color:#F0EFEB;
+            padding-left: 10px;
+            margin-left:20px;
+        }
+        .row1{
+            border-bottom: 1px solid #C9BEB7;
+            margin:0 5px 10px 5px;
+        }
+        .properties .text1{
+            font-size:160%;
+            color:#FA9235;
+            font-family: TimesNewRoman, Serif;
+            font-weight:bold;
+        }
+        .row2{
+            padding-right:5px;
+            margin:0 5px 10px 5px;
+        }
+            .row2 img{
+                margin-right:10px;
+            }
+        .table{
+            margin-left:13px;
+        }
+            .table .column-prices{
+                border: 1px solid #C9BEB7;
+                margin-left:-11px;
+                height:130px;
+            }
+                .table .column-prices li{
+                    list-style:none;
+                    font-size:90%;
+                    margin-left:-15px;
+                    margin-bottom:5px;
+                }
+                .text-column{
+                    color:#314A93;
+                    font-size:100%;
+                    height:20px;
+                    font-weight:bold;
+                    font-style:italic;
+                }
+                .table .column-prices .night1{
+                    background-color:#DDD5CD;
+                    border-bottom:1px solid #C9BEB7;
+                    text-align:center;
+                }
+                .table .column-prices .night2{
+                    background-color:#EFEAE6;
+                    border-bottom:1px solid #C9BEB7;
+                    text-align:center;
+                }
+                .table .pay{
+                    margin-top:5px;
+                    text-align:right;
+                }
+        .properties .text2{
+            font-size:130%;
+            color:#4D2400;
+            font-family: TimesNewRoman, Serif;
+            font-weight: bold;
+        }
+        .properties .text3{
+            font-size:120%;
+        }
+            .properties-right .row2 .column-services{
+                margin-left:-5px;
+            }
+/*--------------------------FIN Detalle de Propiedades------------------------*/
+
+
+/*--------------------------Formulario de Consulta------------------------*/
+.consulta{
+    background:url(../images/background_form.png) no-repeat top left;
+    height:400px;
+    margin-top:20px;
+    padding:25px 0 0 25px;
+}
+    .consulta .form{
+        margin-top:-15px;
+    }
+    .consulta .form-1{
+        margin-right:30px;
+    }
+    .consulta p{
+        font-family: TimesNewRoman, Serif;
+        font-size:120%;
+        color:#684B29;
+        font-weight:bold;
+        margin-bottom:-2px;
+    }
+    .consulta span{
+        font-size:85%;
+        font-style:italic;
+        margin-left:5px;
+    }
+    .consulta .catcha{
+        margin-top:10px;
+    }
+        .consulta .catcha a{
+            font-family: TimesNewRoman, Serif;
+            font-size:120%;
+            color:#684B29;
+            font-style:italic;
+            font-weight:bold;
+        }
+        .consulta .catcha a:hover{
+            text-decoration:underline;
+        }
+/*--------------------------FIN Formulario de Consulta------------------------*/
+
+
+/*--------------------------Seccion Vendimia - Guia turistica------------------------*/
+.column-container{
+    margin-top:25px;
+    color:#8C8176;
+    text-align:justify;
+}
+    .column-container img{
+        border:1px solid #C8BEB1;
+        padding:6px 6px 6px 6px;
+        background-color:#fff;
+        float:left;
+        margin:0 10px 10px 0;
+        position:relative;
+    }
+    .column-container p{
+        float:left;
+        position:relative;
+    }
+    .top-table{
+        background:url(../images/background_tables.png) repeat-x top left;
+        height:30px;
+        padding:3px 0 0 10px;
+        margin-bottom:-6px;
+        margin-top:20px;
+    }
+        .column-container .titles{
+            color:#FA8A1C;
+            font-weight:bold;
+            font-size:120%;
+        }
+        .column-container .bold{
+            color:#66523C;
+            font-weight:bold;
+        }
+         .column-container .row-table{
+            background-color:#E1E4E9;
+            margin-top:5px;
+            margin-bottom:5px;
+            padding-top:5px;
+        }
+        .column-container .line{
+            border-top:1px solid #674F39;
+            border-bottom:1px solid #674F39;
+        }
+        .column-container .line-bottom{
+            border-bottom:1px solid #674F39;
+            margin-bottom:10px;
+        }
+       .column-container .button{
+            margin:-10px 0 0 -25px;
+        }
+        .column-container h4{
+            margin-bottom:5px;
+        }
+        .column-container .column-ski{
+            margin-bottom:20px;
+        }
+        .column-container .title-star{
+            font-size:180%;
+            color:#FD7800;
+            font-weight:bolder;
+            margin-bottom:20px;
+        }
+        .column-container .title-star img{
+            border:none;
+            background-color:transparent;
+            padding:5px 0 0 2px;
+        }
+        .column-container .space-button{
+            margin-top:90px;
+            float:right;
+        }
+        .column-container .row-info{
+            /*margin-top:8px;*/
+        }
+        .column-container .row-city{
+            background:#F8D6BA;
+            margin-top:5px;
+        }
+        .column-container .map{
+            background:url(../images/background_mapgoogle.png) no-repeat top center;
+            height:317px;
+            margin-top:-20px;
+        }
+         .column-container .maps{
+            font-size:90%;
+            text-align:left;
+            border:none;
+            background:none;
+            width:175px;
+            float:left;
+            margin-right:15px;
+        }
+        .column-container .none{
+            border:none;
+            background:none;
+            padding:0;
+        }
+/*--------------------------FIN Secciones Vendimia - Guias - Mapas------------------------*/
+
+
+/*--------------------------Galeria de Fotos------------------------*/
+.galery{
+    height:150px;
+}
+    .galery ul{
+        color:#FD7800;
+        font-family:TimesNewRoman, Serif;
+        font-size:125%;
+    }
+    .galery li{
+        background:url(../images/background_thumbs.png) no-repeat top left;
+        height:139px;
+        width:160px;
+        list-style:none;
+        text-align:center;
+        display:inline-block;
+        padding:5px 0 0 10px;
+        margin:0 5px 0 -20px;
+    }
+    #contThumbs1{
+        float:left;
+        height:inherit;
+    }
+    .galery .arrow-left, arrow-right{
+        width:15px;
+        margin-top:55px;
+        margin-right:10px;
+        float:left;
+    }
+    .galery .arrow-right{
+        width:15px;
+        margin-top:55px;
+        margin-left:-30px;
+        float:right;
+    }
+    .galery .title-photo{
+        margin-top:-15px;
+        width:150px;
+        float:left;
+    }
+.content-previou{
+    background:url(../images/background_photos.png) no-repeat top left;
+    height:464px;
+    padding:20px 0 0 23px;
+    color:#FD7800;
+    font-family:TimesNewRoman, Serif;
+    font-size:125%;
+    text-align:center;
+}
+    .content-previou .miniaturas{
+        margin:-15px 0 0 -23px;
+    }
+    .content-previou .miniaturas li{
+        list-style:none;
+        width:92px;
+        height:61px;
+        float:left;
+        margin-right:8px;
+    }
+    .content-previou .paginador{
+        text-align:center;
+        margin-top:10px;
+    }
+    .content-previou .paginador .before{
+        float:left;
+        margin-top:7px;
+    }
+    .content-previou .paginador .after{
+        float:right;
+        margin-top:7px;
+    }
+/*--------------------------FIN Galeria de Fotos------------------------*/
+
+/*--------------------------Formulario de registro------------------------*/
+.row-form{
+    margin-top:10px;
+    font-family:TimesNewRoman, Serif;
+    font-size:125%;
+}
+    .row-form .button{
+        font-size:90%;
+    }
+    .row-form .input-left{
+        float:left !important;
+        margin-left:6px;
+    }
+    .row-form .row-button{
+        float:left;
+        padding-top:14px;
+        width:76px;
+    }
+    .row-form .row-button1{
+        float:right;
+        width:110px;
+        padding-top:14px;
+    }
+.row-button2{
+    float:left;
+    margin:20px 0 10px 0;
+    text-align:center;
+}
+.text1{
+    color:#FD7800;
+    float:left;
+    font-style:italic;
+}

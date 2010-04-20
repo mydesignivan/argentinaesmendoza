@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA BUTTON
+ -----------------------------------------------------------------------------*/
+button.button{
+    padding-top: 5px;
+    font-size: 90%;
+}
+.button-login{
+    padding:7px 0 3px 0;
+}
+button.button-contact{
+    padding-top: 5px;
+    font-size: 80%;
+}
