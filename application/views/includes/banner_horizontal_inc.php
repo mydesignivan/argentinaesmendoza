@@ -1,3 +1,3 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
-<div class="span-12 last banner"><img src="images/image_banner.png" alt="Argentina es Mendoza"/></div>
+<div class="span-12 last banner-horizontal"><img src="images/image_banner.png" alt="Argentina es Mendoza"/></div>

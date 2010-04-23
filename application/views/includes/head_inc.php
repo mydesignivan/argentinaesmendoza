@@ -6,7 +6,7 @@
 <link href="images/favicon.ico" rel="stylesheet icon" type="image/ico" />
 
 <!-- Framework CSS (BLUE PRINT) -->
-<link rel="stylesheet" href="css/blueprint/screen.min.css" type="text/css" media="screen, projection"/>
+<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection"/>
 <link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print"/>
 <!--[if lt IE 8]><link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/><![endif]-->
 <!-- END FRAMEWORK -->

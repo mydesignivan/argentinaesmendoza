@@ -22,18 +22,18 @@
     <!-- ================  END HEADER  ================ -->
 
     <!-- ================  END MAIN CONTAINER  ================ -->
-    <div class="clear span-24 last">
-        <div class="clear span-16 prepend-0">
+    <div class="clear span-24 last border">
+        <div class="clear span-16">
             <?php require($tlp_section);?>
         </div>
-        <div class="span-7 pull-0 last">
+        <div class="span-7 pull-0 last border">
             <?php require("includes/sidebar_inc.php");?>
         </div>
     </div>
     <!-- ================  END MAIN CONTAINER  ================ -->
 
     <!-- =============== FOOTER =============== -->
-    <?php require('includes/footer_inc.php');?>
+    <?php //require('includes/footer_inc.php');?>
     <!-- =============== END FOOTER =============== -->
 </div>
 </body>

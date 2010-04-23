@@ -1,14 +1,13 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');?>
 
 <!-- =========== BUSCADOR =========== -->
-<div class="search span-9">
-    <div class="search-left">
-        <form action="">
-            <div class="inputbox5 span-8">
-                <div class="subtitle span-2"><span>Buscador:&nbsp;</span></div>
+<div class="search">
+        <form action="" method="post">
+            <div class="input-search">
+                <span>Buscador:&nbsp;</span>
                 <input type="text" value="..." />
             </div>
-            <div class="row span-9">
+            <!--<div class="row span-9">
                 <div class="inputbox6 span-5">
                     <select id="cboCategory">
                         <option>Hoteles</option>
@@ -18,14 +17,13 @@
                     </select>
                 </div>
                 <input type="button" value="Buscar" class="button2 button span-3" />
-            </div>
+            </div>-->
         </form>
-    </div>
 </div>
 <!-- =========== END BUSCADOR =========== -->
 
 <!-- =========== NEWSLETTERS =========== -->
-<div class="newsletter span-9">
+<!--<div class="newsletter span-9">
     <div class="title"><h2>Subscr&iacute;base al Newsletter</h2></div>
     <div class="newsbox span-7 push-1">
         <form action="" method="post">
@@ -34,16 +32,16 @@
             <input type="button" class="button1 button push-1" value="Suscribirse" />
         </form>
     </div>
-</div>
+</div>-->
 <!-- =========== END NEWSLETTERS =========== -->
 
 <!-- =========== BANNER VERTICAL =========== -->
-    <?php require('banner_vertical_inc.php');?>
+    <?php //require('banner_vertical_inc.php');?>
 <!-- =========== END BANNER VERTICAL =========== -->
 
 
 <!-- =========== COTIZACIONES =========== -->
-<div class="change span-9">
+<!--<div class="change span-9">
     <div class="title-change span-8"><h6>COTIZACIONES</h6></div>
     <div class="column-coins span-3">
         <ul>
@@ -68,10 +66,10 @@
             <li><span>2,21</span></li>
         </ul>
     </div>
-</div>
+</div>-->
 <!-- =========== END COTIZACIONES =========== -->
 
-<div class="container-twitter span-11">
+<!--<div class="container-twitter span-11">
     <div class="city span-5">
         <div class="t2">Otros destinos</div>
         <div class="destinations">
@@ -101,4 +99,4 @@
             <span>kjljldas jkiqw yn wjùj kjiwq kjdsad...</span>
         </div>
     </div>
-</div>
+</div>-->

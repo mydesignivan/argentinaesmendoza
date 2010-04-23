@@ -22,7 +22,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 body { 
-  line-height: 1.5; 
+  line-height: 1.5;
 }
 
 /* Tables still need 'cellspacing="0"' in the markup. */
@@ -46,10 +46,10 @@ a img { border: none; }
 /* Default font settings. 
    The font-size percentage is of 16px. (0.75 * 16px = 12px) */
 html { font-size:100.01%; }
-body {
+body { 
   font-size: 80%;
   color: #4D4D4D;
-  background:url(../../images/background_header2.jpg) no-repeat top center #F2F5FA;
+  background:url(../images/background_header2.jpg) no-repeat top center #F2F5FA;
   font-family:'Century Gothic',Arial,Helvetica;
 }
 
@@ -105,7 +105,7 @@ li ul,
 li ol       { margin:0 1.5em; }
 ul, ol      { margin: 0 1.5em 1.5em 1.5em; }
 
-ul          { list-style-type: none; }
+ul          { list-style-type: disc; }
 ol          { list-style-type: decimal; }
 
 dl          { margin: 0 0 1.5em 0; }
@@ -162,7 +162,7 @@ caption     { background: #eee; }
 -------------------------------------------------------------- */
 
 /* Sets up basic grid floating and margin. */
-.column, div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.span-24 {
+.column, div.span-1, div.span-2, div.span-3, div.span-4, div.span-5, div.span-6, div.span-7, div.span-8, div.span-9, div.span-10, div.span-11, div.span-12, div.span-13, div.span-14, div.span-15, div.span-16, div.span-17, div.span-18, div.span-19, div.span-20, div.span-21, div.span-22, div.span-23, div.span-24, div.span-2-1, div.span-0, div.span-8-1 {
   float: left;
   margin-right: 10px;
 }
@@ -171,17 +171,20 @@ caption     { background: #eee; }
 .last, div.last { margin-right: 0; }
 
 /* Use these classes to set the width of a column. */
-.span-1  { width: 30px; }
-.span-2  { width: 70px; }
-.span-3  { width: 110px; }
+.span-0  { width: 30px; }
+.span-1  { width: 47px; }
+.span-2  { width: 62px; }
+.span-2-1  { width: 65px; }
+.span-3  { width: 120px; }
 .span-4  { width: 150px; }
 .span-5  { width: 190px; }
 .span-6  { width: 230px; }
-.span-7  { width: 270px; }
-.span-8  { width: 310px; }
+.span-7  { width: 278px; }
+.span-8  { width: 290px; }
+.span-8-1  { width: 325px; }
 .span-9  { width: 350px; }
 .span-10  { width: 390px; }
-.span-11  { width: 430px; }
+.span-11  { width: 450px; }
 .span-12  { width: 470px; }
 .span-13  { width: 510px; }
 .span-14  { width: 550px; }
@@ -194,8 +197,8 @@ caption     { background: #eee; }
 .span-21  { width: 830px; }
 .span-22  { width: 870px; }
 .span-23  { width: 910px; }
+.span-25  { width: 305px; }
 .span-24  { width: 950px; margin-right: 0; }
-
 /* Use these classes to set the width of an input. */
 input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, textarea.span-3, input.span-4, textarea.span-4, input.span-5, textarea.span-5, input.span-6, textarea.span-6, input.span-7, textarea.span-7, input.span-8, textarea.span-8, input.span-9, textarea.span-9, input.span-10, textarea.span-10, input.span-11, textarea.span-11, input.span-12, textarea.span-12, input.span-13, textarea.span-13, input.span-14, textarea.span-14, input.span-15, textarea.span-15, input.span-16, textarea.span-16, input.span-17, textarea.span-17, input.span-18, textarea.span-18, input.span-19, textarea.span-19, input.span-20, textarea.span-20, input.span-21, textarea.span-21, input.span-22, textarea.span-22, input.span-23, textarea.span-23, input.span-24, textarea.span-24 {
   border-left-width: 1px!important;
@@ -204,10 +207,10 @@ input.span-1, textarea.span-1, input.span-2, textarea.span-2, input.span-3, text
   padding-right: 5px!important;
 }
 
-input.span-1, textarea.span-1 { width: 18px!important; }
-input.span-2, textarea.span-2 { width: 58px!important; }
+input.span-1, textarea.span-1 { width: 40px!important; }
+input.span-2, textarea.span-2 { width: 64px!important; }
 input.span-3, textarea.span-3 { width: 98px!important; }
-input.span-4, textarea.span-4 { width: 138px!important; }
+input.span-4, textarea.span-4 { width: 148px!important; }
 input.span-5, textarea.span-5 { width: 178px!important; }
 input.span-6, textarea.span-6 { width: 218px!important; }
 input.span-7, textarea.span-7 { width: 258px!important; }
@@ -230,7 +233,7 @@ input.span-23, textarea.span-23 { width: 898px!important; }
 input.span-24, textarea.span-24 { width: 938px!important; }
 
 /* Add these to a column to append empty cols. */
-
+.append-0  { padding-right: 50px; }
 .append-1  { padding-right: 40px; } 
 .append-2  { padding-right: 80px; } 
 .append-3  { padding-right: 120px; } 
@@ -257,6 +260,7 @@ input.span-24, textarea.span-24 { width: 938px!important; }
 
 /* Add these to a column to prepend empty cols. */
 
+.prepend-0  { padding-left: 10px; }
 .prepend-1  { padding-left: 40px; } 
 .prepend-2  { padding-left: 80px; } 
 .prepend-3  { padding-left: 120px; } 
@@ -300,6 +304,7 @@ div.colborder {
 /* Use these classes on an element to push it into the 
 next column, or to pull it into the previous column.  */
 
+.pull-0 { margin-left: -20px; }
 .pull-1 { margin-left: -40px; }
 .pull-2 { margin-left: -80px; }
 .pull-3 { margin-left: -120px; }
@@ -323,10 +328,10 @@ next column, or to pull it into the previous column.  */
 .pull-21 { margin-left: -840px; }
 .pull-22 { margin-left: -880px; }
 .pull-23 { margin-left: -920px; }
-.pull-24 { margin-left: -960px; }
 
 .pull-1, .pull-2, .pull-3, .pull-4, .pull-5, .pull-6, .pull-7, .pull-8, .pull-9, .pull-10, .pull-11, .pull-12, .pull-13, .pull-14, .pull-15, .pull-16, .pull-17, .pull-18, .pull-19, .pull-20, .pull-21, .pull-22, .pull-23, .pull-24 {float: left; position:relative;}
 
+.push-1 { margin: 0 -30px 1.5em 30px; }
 .push-1 { margin: 0 -40px 1.5em 40px; }
 .push-2 { margin: 0 -80px 1.5em 80px; }
 .push-3 { margin: 0 -120px 1.5em 120px; }
@@ -352,7 +357,7 @@ next column, or to pull it into the previous column.  */
 .push-23 { margin: 0 -920px 1.5em 920px; }
 .push-24 { margin: 0 -960px 1.5em 960px; }
 
-.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24 {float: right; position:relative;}
+.push-1, .push-2, .push-3, .push-4, .push-5, .push-6, .push-7, .push-8, .push-9, .push-10, .push-11, .push-12, .push-13, .push-14, .push-15, .push-16, .push-17, .push-18, .push-19, .push-20, .push-21, .push-22, .push-23, .push-24, .push-0 {float: right; position:relative;}
 
 
 /* Misc classes and elements
@@ -431,8 +436,11 @@ legend      { font-weight: bold; font-size:1.2em; }
 input[type=text], input[type=password],
 input.text, input.title, 
 textarea, select { 
-  background-color:#fff; 
-  border:1px solid #bbb; 
+    background-color:transparent;
+    border:none;
+    height:18px;
+    font-size:85%;
+    color:#4D2400;
 }
 input[type=text]:focus, input[type=password]:focus, 
 input.text:focus, input.title:focus, 
