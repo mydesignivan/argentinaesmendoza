@@ -11,8 +11,8 @@
 .border{border:1px solid red !important;}
 ul{margin-left: 0;}
 .text-small{font-size: 80%;}
-
-
+b{color:#4D2400;}
+.outbg{background: none !important;}
 
 h1{
     font-size:180%;
@@ -40,6 +40,7 @@ h4{
 h5{
     font-size:130%;
     font-weight:bold;
+    font-family: TimesNewRoman, Serif;
     color:#00257B;
 }
 h6{
@@ -53,19 +54,74 @@ h7{
     font-weight:bold;
 }
 
+.image-frame{
+    float:left;
+    padding:6px;
+    border:1px solid #C8BEB1;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
 /*------------------------------------------------------------------------------
  - ESTILOS PARA LINK
  -----------------------------------------------------------------------------*/
-
+a.link-1{
+    color:#FF7900;
+    font-weight: normal;
+}
+a.link-2{
+    font-family: TimesNewRoman, Serif;
+    color:#4D2400;
+    font-weight: bold;
+    font-size: 120%;
+}
+a.link-3{
+    color:#5585D7;
+    font-size: 90%;
+}
+a.link-moreinfo{
+    color:#FF7900;
+    font-size: 100%;
+    font-style: italic;
+}
+    a.link-moreinfo:hover{
+        text-decoration: underline;
+    }
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA LABEL
  -----------------------------------------------------------------------------*/
-label.label-1{
+label{
     color:#4D2400;
     font-weight:bold;
-    font-size: 80%;
+    font-family: TimesNewRoman, Serif;
 }
+    label.label-small{
+        font-size: 100%;
+    }
+    label.label-medium{
+        font-size: 120%;
+    }
+    label.label-title1{
+        font-size:135%;
+    }
+    label.label-title2{
+        font-size:180%;
+        color:#752903;
+    }
+    label.label-title3{
+        color:#E55302;
+        font-size: 100%;
+        font-weight: normal;
+    }
+    label.label-title4{
+        color:#fff;
+        font-size: 150%;
+    }
+    label.label-title5{
+        color:#FA8A1C;
+        font-size: 130%;
+    }
 
 
 /*------------------------------------------------------------------------------
@@ -80,24 +136,34 @@ input[type=text],input[type=password], textarea{
     background-color: transparent;
 }
 
-div.input-fly-large{
+div.input-1-large{
     background:url(../images/box2.png) no-repeat top left;
     width: 148px;
     height:27px;
 }
-    div.input-fly-large input{
+    div.input-1-large input{
         margin: 4px 0  0 8px;
         width:128px;
     }
-div.input-fly-medium{
+div.input-1-medium{
     background:url(../images/box3.png) no-repeat top left;
     width: 64px;
     height:27px;
 }
-    div.input-fly-medium input{
+    div.input-1-medium input{
         margin: 4px 0  0 7px;
         width:45px;
         font-size: 90%;
+    }
+
+div.input-2-large{
+    background: transparent url(../images/box1.png) no-repeat top left;
+    width: 161px;
+    height:27px;
+}
+    div.input-2-large input{
+        margin: 4px 0  0 7px;
+        width:143px;
     }
 
 /*------------------------------------------------------------------------------
@@ -106,19 +172,69 @@ div.input-fly-medium{
 button{
     font-family:Arial, Helvetica, sans-serif;
     border:none;
-    font-size: 110%;
+    font-size: 105%;
     text-align:center;
     color:#fff;
 }
-button.button-medium{
+button.button-1-medium{
     background: transparent url(../images/button1.png) no-repeat scroll top center;
     width: 76px;
     height: 20px;
 }
+button.button-2-medium{
+    background: transparent url(../images/button2.png) no-repeat scroll top center;
+    width: 76px;
+    height: 20px;
+
+}
 
 /*------------------------------------------------------------------------------
- - ESTILOS PARA TEXTOS
+ - ESTILOS PARA LISTAS
  -----------------------------------------------------------------------------*/
+ul.list-item-1 li{
+    list-style-image:url(../images/image_list.png);
+    list-style-position:outside;
+    list-style-type:disc;
+    margin-bottom:10px;
+    margin-left:20px;
+}
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA TABLAS CON DIV
+ -----------------------------------------------------------------------------*/
+.divtable-head{
+    float:left;
+    clear: left;
+    background: transparent url(../images/background_tables.png) repeat-x scroll left top;
+    width: 570px;
+    height: 27px;
+    padding:5px 0 0 10px;
+}
+.divtable-row{
+    float:left;
+    clear:left;
+    width: 565px;
+    background-color: #E1E4E9;
+    padding:10px 5px 10px 10px;
+}
+    .divtable-row p.lastp{margin-bottom: 0;}
+    .divtable-row .col{
+        float:left;
+        width: 386px;
+    }
+    .divtable-row h4{margin-bottom: 12px;}
+.divtable-row-head{
+    float:left;
+    clear:left;
+    width: 565px;
+    padding:2px 5px 2px 10px;
+    background-color: #F8D6BA;
+    color:#FA8A1C;
+    font-size: 120%;
+    font-weight: bold;
+}
+.divtable-rowspecial-1{padding:3px 5px 3px 10px;}
+.divtable-rowspecial-2{padding:2px 5px 5px 10px;}
 
 
 /*------------------------------------------------------------------------------
@@ -131,10 +247,10 @@ button.button-medium{
     float:left;
     text-align: center;
 }
-.header-topmenu .col-1{&nbsp;
+.header-topmenu .col-1{
     width:90px;
     border-right: 1px solid #000;
-}&nbsp;
+}
 .header-topmenu .col-2{
     width:90px;
     border-right: 1px solid #000;
@@ -146,6 +262,12 @@ button.button-medium{
         position:relative;
         top: -8px;
     }
+
+/** Login
+ ******************************************************************************/
+.login{
+    text-align: right;
+}
 
 /** Plugin Clima
  ******************************************************************************/
@@ -170,17 +292,9 @@ button.button-medium{
             padding-bottom:2px;
         }
      .container-weather .weather-icon{
-        float:left;&nbsp;
+        float:left;
         margin-top:40px;
     }
-
-/** BANNER HORIZONTAL
- ******************************************************************************/
-.banner-horizontal{
-    float:right;
-    position: relative;
-    right: -25px;
-}
 
 /** MENU PRINCIPAL
  ******************************************************************************/
@@ -203,56 +317,379 @@ button.button-medium{
         }
         .menu ul li.outline{background: none !important;}
 
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA BANNERS
+ -----------------------------------------------------------------------------*/
+.banner-horizontal{
+    float:right;
+    position: relative;
+    right: -25px;
+}
+.banner-vertical{
+    float:left;
+    clear: left;
+    background-color:#FFFFFF;
+    width: 305px;
+    height:180px;
+    margin-top:25px;
+    margin-left:-10px;
+}
+.banner-vertical2{
+    float:left;
+    background-color:#FFFFFF;
+    width: 150px;
+    height:348px;
+    margin:22px 0 0 10px;
+}
+
 /*------------------------------------------------------------------------------
  - ESTILOS PARA EL CUERPO DE LAS SECCIONES
  -----------------------------------------------------------------------------*/
+.content{
+    padding-left:20px;
+    width: 612px;
+}
+    .content h1.title_section{margin-bottom: 22px;}
+    .content h1.title_section2{margin:28px 0 22px 0;}
+
 /* Buscador de Vuelos
  ******************************************************************************/
-.fly{
+.content .fly{
+    float:left;
     background: url(../images/background_fly.png) no-repeat top left;
-    margin-left:5px;
-    height:260px;
-    border:1px solid red;
+    margin-left:-8px;
+    height:270px;
 }
-    .fly .photo-search{
+    .content .fly .photo-search{
         float:left;
         margin:33px 0 0 12px;
     }
-    .fly .search-fly{
+    .content .fly .search-fly{
         float: left;
         width: 199px;
         height: auto;
         margin:40px 0 0 8px;
         /*border:1px solid red;*/
     }
-        .fly .search-fly .row{width: 199px;}
-        .fly .search-fly .input-fly-large{margin: 0 auto;}
-        .fly .search-fly .col{
+        .content .fly .search-fly .row{width: 199px;}
+        .content .fly .search-fly .input-1-large{margin: 0 auto;}
+        .content .fly .search-fly .col{
             float:left;
             margin:2px 0 0 5px;
         }
-            .fly .search-fly .col label{margin-left: 5px;}
-            .fly .search-fly .row .button-medium{margin-top: 5px;}
+            .content .fly .search-fly .col label{margin-left: 5px;}
+            .content .fly .search-fly .row .button-medium{margin-top: 5px;}
+
+
+
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA EL SIDEBAR
  -----------------------------------------------------------------------------*/
-.search{
-    float:left;
+/* Buscador
+ ******************************************************************************/
+.sidebar .search{
+    float:right;
+    clear: both;
     background: url(../images/background-search.png) no-repeat top left;
-    width:333px;
-    height:111px;
+    width:308px;
+    height:86px;
+    margin:15px -40px 0 0;
+    padding:25px 0 0 25px;
+    /*border:1px solid red;*/
 }
+    .sidebar .search .row{
+        margin-bottom: 7px;
+    }
+    .sidebar .search select{margin:0 !important;}
+
+/* Newsletter
+ ******************************************************************************/
+.sidebar .newsletter{
+    float:right;
+    clear: both;
+    background: url(../images/background-news.png) no-repeat top left;
+    width:308px;
+    height:86px;
+    margin:15px -40px 0 0;
+    padding:25px 0 0 25px;
+    /*border:1px solid red;*/
+}
+    .sidebar .newsletter .row{
+        float:left;
+        width:300px;
+        margin-top:5px;
+    }
+        .sidebar .newsletter .row .button-1-medium{
+            float:left;
+            margin:4px 0 0 3px;
+        }
+
+/* Cotizaciones
+ ******************************************************************************/
+.sidebar .cotizaciones{
+    float:right;
+    clear: both;
+    background: url(../images/background-change.png) no-repeat top left;
+    width:296px;
+    height:168px;
+    margin:15px -35px 0 0;
+    padding:4px 0 0 25px;
+    /*border:1px solid red;*/
+}
+    .sidebar .cotizaciones .col{
+        float:left;
+        height: auto;
+        margin-top: 23px;
+    }
+    .sidebar .cotizaciones .col-1{
+        width:80px;
+        margin-right: 40px;
+    }
+    .sidebar .cotizaciones .col-2{
+        width:70px;
+        margin-top:4px;
+        text-align: center;
+    }
+    .sidebar .cotizaciones ul.list{
+        float: left;
+        width: 100%;
+    }
+        .sidebar .cotizaciones .list li{
+            float: left;
+            clear: left;
+            font-size: 100%;
+            width: 100%;
+            color:#5585D7;
+            margin-bottom: 15px;
+        }
+
+/* Otros destinos
+ ******************************************************************************/
+.sidebar .otrosdestinos{
+    float:left;
+    background: url(../images/background-destinations.png) no-repeat top left;
+    width:140px;
+    height:288px;
+    padding: 6px 0 0 20px;
+    margin-left: -18px;
+}
+    .sidebar .otrosdestinos .list-item-1{
+        margin-top: 34px;
+    }
+.sidebar .twitter{
+    float:left;
+    background: url(../images/background_twitter.png) no-repeat top left;
+    width:140px;
+    height:218px;
+    padding:80px 15px 0 15px;
+    margin-top: -7px;
+}
+
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA DESTACADOS
+ -----------------------------------------------------------------------------*/
+.destacados{
+    float: left;
+    width: 600px;
+    height: auto;
+}
+    .destacados .col{
+        float:left;
+        width: 290px;
+        border-bottom: 1px solid #B1A08E;
+        margin:0 10px 15px 0;
+        padding-bottom: 5px;
+    }
+        .destacados .col p{
+            margin-top: -15px;
+            margin-bottom: 0;
+            font-size: 80%;
+        }
+        .destacados .col .image{
+            float: left;
+            width: 66px;
+            height:66px;
+            background-color:#FFFFFF;
+            border:1px solid #B1A08E;
+            padding:5px 0 0 5px;
+            margin-right: 4px;
+        }
+        .destacados .col .link-moreinfo{
+            float:right;
+            clear: both;
+            margin-right: 150px;
+        }
 
 
 
 /*------------------------------------------------------------------------------
- - ESTILOS PARA EL LOGIN
+ - ESTILOS PARA EL MAPA DEL GOOGLE
  -----------------------------------------------------------------------------*/
-.login{
-    text-align: right;
+.map-google{
+    float:left;
+    background: transparent url(../images/background_google.png) no-repeat top left;
+    width: 450px;
+    height: 378px;
+    margin-left: -10px;
 }
+.map-google-wide{
+    float:left;
+    background: transparent url(../images/background_mapgoogle.png) no-repeat top left;
+    width: 586px;
+    height: 317px;
+    margin:-25px 0 0 -10px;
+}
+
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA NOTICIAS
+ -----------------------------------------------------------------------------*/
+.news{
+    float: left;
+    clear: left;
+    width: 600px;
+}
+    .news .col{
+        float: left;
+        width: 200px;
+    }
+        .news .col ul.list{
+            color: #5084D7;
+            font-size: 95%;
+            font-style: italic;
+            margin-top: -20px;
+        }
+            .news .col ul.list li{
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+                border-bottom: 1px dashed #999999;
+            }
+
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA MAPAS DE MENDOZA
+ -----------------------------------------------------------------------------*/
+.mapmendoza-col{
+    float:left;
+    width: 170px;
+    height: inherit;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+    .mapmendoza-col h5{margin-bottom: 5px;}
+    .mapmendoza-col p{height: 105px;}
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA MAPAS NIEVE Y SKY
+ -----------------------------------------------------------------------------*/
+.nievesky-row{
+    float:left;
+    clear:left;
+    width:590px;
+    height: inherit;
+    margin-bottom: 20px;
+}
+    .nievesky-row .image-frame{
+        margin-right: 8px;
+    }
+    .nievesky-row .col{
+        float: left;
+        width: 318px;
+    }
+    .nievesky-row h4{margin-bottom: 5px;}
+    .nievesky-row p{margin-bottom:5px;}
+    .nievesky-row .link-moreinfo{
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA RESULTADO DE BUSQUEDA
+ -----------------------------------------------------------------------------*/
+.resultsearch-row{
+    float:left;
+    clear:left;
+    width:590px;
+    height: inherit;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom:1px solid #674F39;
+}
+    .resultsearch-row .image-frame{
+        margin-right: 8px;
+    }
+    .resultsearch-row .column{
+        width: 496px;
+    }
+    .resultsearch-row .col{
+        float: left;
+        width: 442px;
+    }
+        .resultsearch-row .col p{margin-bottom: 0;}
+    .resultsearch-row .link-moreinfo{
+        float:right;
+        font-size: 110%;
+        margin-top: -18px;
+    }
+
+/*------------------------------------------------------------------------------
+ - ESTILOS PARA TELEFONOS UTILES
+ -----------------------------------------------------------------------------*/
+.telutil-row{padding:3px 5px 3px 10px;}
+
 
 /*------------------------------------------------------------------------------
  - ESTILOS PARA EL FOOTER
  -----------------------------------------------------------------------------*/
+.footer{
+    float:left;
+    clear: both;
+    background: transparent url(../images/background_footer.png) repeat-x left top;
+    width: 100%;
+    height: inherit;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+    .footer .container-info{
+        width: 800px;
+        margin: 0 auto;
+    }
+        .footer .container-info .col{
+            float:left;
+            width: 320px;
+            /*border: 1px solid red;*/
+        }
+            .footer .container-info .col ul.list{
+                margin-left: 18px;
+            }
+                .footer .container-info .col ul.list li{
+                    list-style-image:url(../images/image_list.png);
+                    list-style-position:outside;
+                    list-style-type:none;
+                }
+    .footer .container-links{
+        width: 900px;
+        margin: 20px auto;
+    }
+        .footer .container-links .row1{
+            float: left;
+            width: 900px;
+            margin-top: -20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #999999;
+        }
+            .footer .container-links .row1 ul.list li{
+                display: inline;
+                float: left;
+                width: 290px;
+                margin-bottom: 2px;
+            }
+        .footer .container-links .row2{
+            width: 900px;
+            text-align: center;
+        }
+

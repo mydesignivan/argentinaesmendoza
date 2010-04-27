@@ -2,101 +2,89 @@
 
 <!-- =========== BUSCADOR =========== -->
 <div class="search">
-        <form action="" method="post">
-            <div class="input-search">
-                <span>Buscador:&nbsp;</span>
-                <input type="text" value="..." />
-            </div>
-            <!--<div class="row span-9">
-                <div class="inputbox6 span-5">
-                    <select id="cboCategory">
-                        <option>Hoteles</option>
-                        <option>Departamentos</option>
-                        <option>Casas</option>
-                        <option>Hostels</option>
-                    </select>
-                </div>
-                <input type="button" value="Buscar" class="button2 button span-3" />
-            </div>-->
-        </form>
+    <form action="" method="post">
+        <div class="span-7 row">
+            <label class="label-medium float-left">Buscador:&nbsp;</label>
+            <div class="input-2-large float-left"><input type="text" value="..." /></div>
+        </div>
+        <div class="span-7 row">
+            <select class="float-left" id="cboCategory">
+                <option>Hoteles</option>
+                <option>Departamentos</option>
+                <option>Casas</option>
+                <option>Hostels</option>
+            </select>
+            <button type="button" class="button-2-medium float-right" onclick="">Buscar</button>
+        </div>
+    </form>
 </div>
 <!-- =========== END BUSCADOR =========== -->
 
 <!-- =========== NEWSLETTERS =========== -->
-<!--<div class="newsletter span-9">
-    <div class="title"><h2>Subscr&iacute;base al Newsletter</h2></div>
-    <div class="newsbox span-7 push-1">
-        <form action="" method="post">
-            <div class="span-0"><span>E-mail:</span></div>
-            <div class="inputbox1 span-6"><input type="text" /></div>
-            <input type="button" class="button1 button push-1" value="Suscribirse" />
-        </form>
-    </div>
-</div>-->
+<div class="newsletter">
+    <label class="label-title1">Subscr&iacute;base al Newsletter</label>
+
+    <form action="" method="post">
+        <div class="row">
+            <label class="label-medium float-left">Email:&nbsp;</label>
+            <div class="input-1-large float-left"><input type="text" value="..." /></div>
+            <button type="button" class="button-1-medium" onclick="">Suscribirse</button>
+        </div>
+        
+    </form>
+</div>
 <!-- =========== END NEWSLETTERS =========== -->
 
 <!-- =========== BANNER VERTICAL =========== -->
-    <?php //require('banner_vertical_inc.php');?>
+    <?php require('banner_vertical_inc.php');?>
 <!-- =========== END BANNER VERTICAL =========== -->
 
-
 <!-- =========== COTIZACIONES =========== -->
-<!--<div class="change span-9">
-    <div class="title-change span-8"><h6>COTIZACIONES</h6></div>
-    <div class="column-coins span-3">
-        <ul>
-            <li><span>Dolar&ensp;</span><img src="images/icon_dolar.png" alt="cotizacion del dolar"/></li>
-            <li><span>Euro&ensp;</span><img src="images/icon_euro.png" alt="cotizacion del euro"/></li>
-            <li><span>Real&ensp;</span><img src="images/icon_real.png" alt="cotizacion del real"/></li>
+<div class="cotizaciones">
+    <label class="label-title2">COTIZACIONES</label><br />
+    <div class="col col-1">
+        <ul class="list">
+            <li><span class="float-left">Dolar&ensp;</span><img src="images/icon_dolar.png" alt="cotizacion del dolar" class="float-right" /></li>
+            <li><span class="float-left">Euro&ensp;</span><img src="images/icon_euro.png" alt="cotizacion del euro" class="float-right" /></li>
+            <li><span class="float-left">Real&ensp;</span><img src="images/icon_real.png" alt="cotizacion del real" class="float-right" /></li>
         </ul>
     </div>
-    <div class="column-change span-2">
-        <div class="t1"><p>COMPRA</p></div>
-        <ul>
+    <div class="col col-2">
+        <label class="label-title3">COMPRA</label><br />
+        <ul class="list">
             <li><span>3,79</span></li>
             <li><span>5,62</span></li>
             <li><span>2,11</span></li>
         </ul>
     </div>
-    <div class="column-change span-2">
-        <div class="t1"><p>VENTA</p></div>
-        <ul>
-            <li><span>3,83</span></li>
+    <div class="col col-2">
+        <label class="label-title3">VENTA</label><br />
+        <ul class="list">
+            <li><span>3,79</span></li>
             <li><span>5,71</span></li>
-            <li><span>2,21</span></li>
+            <li><span>2,11</span></li>
         </ul>
     </div>
-</div>-->
+</div>
 <!-- =========== END COTIZACIONES =========== -->
 
-<!--<div class="container-twitter span-11">
-    <div class="city span-5">
-        <div class="t2">Otros destinos</div>
-        <div class="destinations">
-            <ul>
-                <li><a href="#">Mendoza</a></li>
-                <li><a href="#">Neuquen</a></li>
-                <li><a href="#">Rio Negro</a></li>
-                <li><a href="#">Chubut</a></li>
-                <li><a href="#">San Juan</a></li>
-                <li><a href="#">Entre Rios</a></li>
-                <li><a href="#">Córdoba</a></li>
-            </ul>
-        </div>
-    </div>
+<div class="banner-vertical">ESPACIO PUBLICITARIO</div>
 
-    <div class="twitter span-5 pull-1">
-        <div class="row-twitter span-3">
-            <p>Lijqasuye</p>
-            <span>kjljldas jkiqw yn wjùj kjiwq kjdsad...</span>
-        </div>
-        <div class="row-twitter span-3">
-            <p>Lijqasuye</p>
-            <span>kjljldas jkiqw yn wjùj kjiwq kjdsad...</span>
-        </div>
-        <div class="row-twitter span-3">
-            <p>Lijqasuye</p>
-            <span>kjljldas jkiqw yn wjùj kjiwq kjdsad...</span>
-        </div>
+<div class="clear span-9 prepend-top">
+    <div class="otrosdestinos">
+        <label class="label-title4">Otros destinos</label>
+        <ul class="list-item-1">
+            <li><a href="#" class="link-1">Mendoza</a></li>
+            <li><a href="#" class="link-1">Neuquen</a></li>
+            <li><a href="#" class="link-1">Rio Negro</a></li>
+            <li><a href="#" class="link-1">Chubut</a></li>
+            <li><a href="#" class="link-1">San Juan</a></li>
+            <li><a href="#" class="link-1">Entre Rios</a></li>
+            <li><a href="#" class="link-1">Córdoba</a></li>
+        </ul>
     </div>
-</div>-->
+    
+    <div class="twitter">
+        asdasd as d asd a sdd as d as d as d asd as d asd
+    </div>
+</div>

@@ -1,13 +1,13 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-class Index extends Controller {
+class Nieve_sky extends Controller {
 
     /* CONSTRUCTOR
      **************************************************************************/
     function __construct(){
         parent::Controller();
         $this->load->library('dataview', array(
-            'tlp_section'     =>  'frontpage/index_view.php',
-            'tlp_title'       =>  TITLE_INDEX
+            'tlp_section'     =>  'frontpage/nievesky_view.php',
+            'tlp_title'       =>  TITLE_NIEVESKY
         ));
         $this->_data = $this->dataview->get_data();
     }
@@ -20,7 +20,7 @@ class Index extends Controller {
      **************************************************************************/
     public function index(){
         $this->_data = $this->dataview->set_data(array(
-            'tlp_title_section' => 'Destacados'
+            'tlp_title_section' => 'Nieve y Sky'
         ));
         $this->load->view('template_frontpage_view', $this->_data);
     }

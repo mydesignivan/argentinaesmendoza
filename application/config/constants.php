@@ -162,6 +162,12 @@ define('CFG_xxxx', 1);
 */
 define('TITLE_GLOBAL', 'Alquileres Temporarios'); // Titulo para todas las secciones
 define('TITLE_INDEX', '');
+define('TITLE_CAJEROS', '');
+define('TITLE_GUIATURISTICA', '');
+define('TITLE_MAPASMENDOZA', '');
+define('TITLE_NIEVESKY', '');
+define('TITLE_TELUTIL', '');
+define('TITLE_VENDIMIA', '');
 define('TITLE_CONTACTO', '');
 define('TITLE_REGISTRO', '');
 define('TITLE_MICUENTA', '');

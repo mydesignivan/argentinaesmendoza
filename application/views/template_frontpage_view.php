@@ -22,19 +22,27 @@
     <!-- ================  END HEADER  ================ -->
 
     <!-- ================  END MAIN CONTAINER  ================ -->
-    <div class="clear span-24 last border">
-        <div class="clear span-16">
+    <div class="clear span-24 last">
+        <div class="clear span-16 content ">
+            <?php if( $this->uri->segment(1)==""||$this->uri->segment(1)=="index" ){
+                require('includes/buscadorvuelos_inc.php');
+                echo '<h1 class="title_section">'.$tlp_title_section.'</h1>';
+            }else{               
+                echo '<h1 class="title_section2">'.$tlp_title_section.'</h1>';
+            }?>
+
             <?php require($tlp_section);?>
         </div>
-        <div class="span-7 pull-0 last border">
+        <div class="span-7 last sidebar">
             <?php require("includes/sidebar_inc.php");?>
         </div>
     </div>
     <!-- ================  END MAIN CONTAINER  ================ -->
-
-    <!-- =============== FOOTER =============== -->
-    <?php //require('includes/footer_inc.php');?>
-    <!-- =============== END FOOTER =============== -->
 </div>
+    <!-- =============== FOOTER =============== -->
+    <?php require('includes/footer_inc.php');?>
+    <!-- =============== END FOOTER =============== -->
+
+
 </body>
 </html>
