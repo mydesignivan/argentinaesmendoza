@@ -16,7 +16,14 @@
 
     <!-- =========== LOGIN =========== -->
     <div class="span-13 last prepend-top">
-        <div class="float-right prepend-1"><a href="#"><img src="images/button_login.png" width="65" height="18" alt="Login"/></a></div>
+        <div class="login">
+            <a href="#"><img src="images/button_login.png" width="65" height="18" alt="Login"/></a>
+            <div class="login-form">
+                <form id="formLogin" action="">
+
+                </form>
+            </div>
+        </div>
         <div class="float-right"><a href="#">¿Tienes una cuenta?</a></div>
     </div>
     <!-- =========== END LOGIN =========== -->
@@ -28,14 +35,17 @@
     <!-- =========== PLUGINS CLIMA =========== -->
     <div class="container-weather">
         <div class="weather-left">
-            <h5>Jueves 29</h5>
+            <h5><?=dateDayText() .' '. date('d');?></h5>
             <ul>
-                <li><img src="images/icon_weather_down.png" width="10" height="12" alt="Temperatura minima"/><span>15º</span></li>
-                <li><img src="images/icon_weather_up.png" width="10" height="12" alt="Temperatura maxima"/><span>25º</span></li>
-                <li><img src="images/icon_weather_water.png" width="10" height="12" alt="Humedad"/><span>5%</span></li>
+                <li><img src="images/icon_weather_down.png" width="10" height="12" alt="Temperatura mínima"/><span><?=$clima['temp_low'];?></span></li>
+                <li><img src="images/icon_weather_up.png" width="10" height="12" alt="Temperatura maxima"/><span><?=$clima['temp_high'];?></span></li>
+                <li><img src="images/icon_weather_water.png" width="10" height="12" alt="Humedad"/><span><?=$clima['humidity'];?></span></li>
             </ul>
         </div>
-        <div class="weather-icon"><img src="images/icon_weather_sun.png" width="75" height="75" alt="Soleado"/></div>
+        <div class="weather-icon">
+            <img src="<?=$clima['icon'];?>" width="200" height="130" alt="" />
+            <span class="temp"><?=$clima['temp_current'];?></span>
+        </div>
     </div>
     <!-- =========== END PLUGINS CLIMA =========== -->
 
@@ -46,48 +56,90 @@
 
 <!-- =========== MENU =========== -->
 <div class="span-24 prepend-1 last menu">
-    <ul>
-        <li>
+    <ul class="sf-menu">
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Donde<br/>Dormir</span>
                 <div class="float-right"><img src="images/icon_hospedajes.png" alt="Hospedajes"/></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li>
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Donde<br/>Comer</span>
                 <div class="float-right"><img src="images/icon_restaurantes.png" alt="Restaurants"/></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li>
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Donde<br/>Comprar</span>
                 <div class="float-right"><img src="images/icon_compras.png" alt="Shopping" /></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li>
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Viajar y<br/>Conocer</span>
                 <div class="float-right"><img src="images/icon_visitar.png" alt="Turismo" /></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li>
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Vendimia<br/>&nbsp;</span>
                 <div class="float-right"><img src="images/icon_vendimia.png" alt="Vendimia" /></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li>
+        <li class="opt-level-0">
             <a href="#" class="link-menu">
                 <span class="float-left">Mendoza<br/>de Noche</span>
                 <div class="float-right"><img src="images/icon_ticket.png" alt="Mendoza de noche" /></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
-        <li class="outline">
+        <li class="opt-level-0 outline">
             <a href="#" class="link-menu">
                 <span class="float-left">Datos<br/>Utiles</span>
                 <div class="float-right"><img src="images/icon_datos.png" alt="Datos Utiles"/></div>
             </a>
+            <ul class="hide">
+                <li><a href="">Estaciones de Servicio</a></li>
+                <li><a href="">option 2</a></li>
+                <li><a href="">option 3</a></li>
+                <li><a href="">option 4</a></li>
+            </ul>
         </li>
     </ul>
 </div>

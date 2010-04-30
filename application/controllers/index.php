@@ -5,6 +5,9 @@ class Index extends Controller {
      **************************************************************************/
     function __construct(){
         parent::Controller();
+
+        $this->load->library('webservice');
+
         $this->load->library('dataview', array(
             'tlp_section'     =>  'frontpage/index_view.php',
             'tlp_title'       =>  TITLE_INDEX
@@ -20,8 +23,12 @@ class Index extends Controller {
      **************************************************************************/
     public function index(){
         $this->_data = $this->dataview->set_data(array(
-            'tlp_title_section' => 'Destacados'
+            'tlp_title_section' => 'Destacados',
+            'tlp_script'        => array('datepicker', 'fly'),
+            'divisas'           => $this->webservice->get_cotizacion(),
+            'clima'             => $this->webservice->get_clima('ARMA0056')
         ));
+        
         $this->load->view('template_frontpage_view', $this->_data);
     }
 

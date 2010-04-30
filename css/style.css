@@ -266,12 +266,17 @@ ul.list-item-1 li{
 /** Login
  ******************************************************************************/
 .login{
-    text-align: right;
+    float:right;
+    margin-left: 50px;
 }
+    .login .cont-header{
+    }
+
 
 /** Plugin Clima
  ******************************************************************************/
 .container-weather{
+    position: relative;
     float:left;
     width: 206px;
     height: 134px;
@@ -292,9 +297,19 @@ ul.list-item-1 li{
             padding-bottom:2px;
         }
      .container-weather .weather-icon{
-        float:left;
-        margin-top:40px;
-    }
+         position: absolute;
+         left:80px;
+         top:20px;
+     }
+     .container-weather .temp{
+         position: absolute;
+         top: 80px;
+         left:30px;
+         font-size: 150%;
+         font-family: TimesNewRoman, Serif;
+         font-weight: bold;
+         color:#00257B;
+     }
 
 /** MENU PRINCIPAL
  ******************************************************************************/
@@ -302,20 +317,71 @@ ul.list-item-1 li{
     margin-top: 48px;
     padding-left: 35px !important;
 }
-    .menu ul li{
-        display: inline;
-        float: left;
-        width: 110px;
-        margin-right: 10px;
-        padding-right: 10px;
-        background: transparent url(../images/line_menu.png) no-repeat scroll right;
+    .menu ul.sf-menu{
+        position: relative;
+
     }
-        .menu ul li .link-menu{
+        .menu ul.sf-menu li.opt-level-0{
+            display: inline;
+            float: left;
+            position: relative;
+            width: 110px;
+            margin-right: 10px;
+            padding-right: 10px;
+            background: transparent url(../images/line_menu.png) no-repeat scroll right;
+        }
+        .menu ul.sf-menu li.opt-level-0 a.link-menu{
             display: block;
             color: #FF7900;
             font-size: 105%;
         }
-        .menu ul li.outline{background: none !important;}
+        .menu ul.sf-menu li.outline{background: none !important;}
+
+        .menu ul.sf-menu .sf-sub-indicator {
+            position: absolute;
+            background:	url('../images/menu_indicator.png') no-repeat;
+            width: 12px;
+            height: 7px;
+            top:30px;
+            left: 105px;
+            text-indent: -999em;
+            display: block;
+            overflow: hidden;
+        }
+
+
+    /** Estilos para los submenus
+     *******************************************/
+        .menu ul.sf-menu ul{
+            position: absolute;
+            top:43px;
+            left:-30px;
+            background-color: #FFFEFF;
+            border:2px solid #E8753A;
+            border-top: none;
+            width: 128px;
+            z-index: 1100;
+        }
+            .menu ul.sf-menu ul li{
+                float: left;
+                position: relative;
+                display: list-item;
+                width: 128px;
+                background: none;
+                margin-bottom: 5px;
+            }
+                .menu ul.sf-menu ul li a {
+                    display: block;
+                    position: relative;
+                    font-size: 105%;
+                    color:#FF7900;
+                    padding:2px 2px 2px 2px;
+                }
+                    .menu ul.sf-menu ul li a:hover {
+                        visibility: inherit; /* fixes IE7 'sticky bug' */
+                        background-color: #FD7801;
+                        color:#fff;
+                    }
 
 
 /*------------------------------------------------------------------------------
@@ -380,6 +446,10 @@ ul.list-item-1 li{
         }
             .content .fly .search-fly .col label{margin-left: 5px;}
             .content .fly .search-fly .row .button-medium{margin-top: 5px;}
+
+        .content .fly .search-fly .button-1-medium{
+            margin-top: 5px;
+        }
 
 
 

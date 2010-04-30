@@ -1,0 +1,1 @@
+a:6:{s:12:"dolar_compra";s:4:"3.88";s:11:"dolar_venta";s:4:"5.88";s:12:"libra_compra";s:4:"5.95";s:11:"libra_venta";s:4:"5.08";s:11:"euro_compra";s:4:"5.14";s:10:"euro_venta";s:4:"4.08";}

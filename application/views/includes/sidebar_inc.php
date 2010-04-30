@@ -5,7 +5,7 @@
     <form action="" method="post">
         <div class="span-7 row">
             <label class="label-medium float-left">Buscador:&nbsp;</label>
-            <div class="input-2-large float-left"><input type="text" value="..." /></div>
+            <div class="input-2-large float-left"><input type="text" value="..." onblur="set_input(event, '...')" onfocus="clear_input(event)" /></div>
         </div>
         <div class="span-7 row">
             <select class="float-left" id="cboCategory">
@@ -27,7 +27,7 @@
     <form action="" method="post">
         <div class="row">
             <label class="label-medium float-left">Email:&nbsp;</label>
-            <div class="input-1-large float-left"><input type="text" value="..." /></div>
+            <div class="input-1-large float-left"><input type="text" value="..." onblur="set_input(event, '...')" onfocus="clear_input(event)" /></div>
             <button type="button" class="button-1-medium" onclick="">Suscribirse</button>
         </div>
         
@@ -52,16 +52,16 @@
     <div class="col col-2">
         <label class="label-title3">COMPRA</label><br />
         <ul class="list">
-            <li><span>3,79</span></li>
-            <li><span>5,62</span></li>
+            <li><span><?=$divisas['dolar_compra'];?></span></li>
+            <li><span><?=$divisas['euro_compra'];?></span></li>
             <li><span>2,11</span></li>
         </ul>
     </div>
     <div class="col col-2">
         <label class="label-title3">VENTA</label><br />
         <ul class="list">
-            <li><span>3,79</span></li>
-            <li><span>5,71</span></li>
+            <li><span><?=$divisas['dolar_venta'];?></span></li>
+            <li><span><?=$divisas['euro_venta'];?></span></li>
             <li><span>2,11</span></li>
         </ul>
     </div>

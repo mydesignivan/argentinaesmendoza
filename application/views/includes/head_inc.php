@@ -38,7 +38,15 @@
 
 <!--========== CLASS ============-->
 <!--<script type="text/javascript" src="js/class.login<?=$this->config->item('sufix_pack_js');?>.js"></script>-->
+<script type="text/javascript" src="js/class.sidebar<?=$this->config->item('sufix_pack_js');?>.js"></script>
 <!--======= END CLASS =======-->
+
+<!--========== SCRIPT: SUPERFISH (MENU DESPLEGABLES) ============-->
+<script type="text/javascript" src="js/superfish-1.4.8/hoverIntent.min.js"</script>
+<script type="text/javascript" src="js/superfish-1.4.8/superfish.min.js"></script>
+<script type="text/javascript" src="js/superfish-1.4.8/execute.js"></script>
+<!--========== END SCRIPT ============-->
+
 
 
 <!--[if IE 6]>
