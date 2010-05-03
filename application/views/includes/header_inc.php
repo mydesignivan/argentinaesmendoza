@@ -19,8 +19,17 @@
         <div class="login">
             <a href="#"><img src="images/button_login.png" width="65" height="18" alt="Login"/></a>
             <div class="login-form">
-                <form id="formLogin" action="">
-
+                <form id="formLogin" class="form" action="<?=site_url('/login/');?>" enctype="application/x-www-form-urlencoded" method="post">
+                    <div class="span-4">
+                        <label for="txtLoginUser" class="label-form">Usuario</label><br />
+                        <input type="text" name="txtLoginUser" id="txtLoginUser" class="validate" value="" />
+                    </div>
+                    <div class="clear span-4">
+                        <label for="txtLoginPass" class="label-login">Contrase&ntilde;a</label><br />
+                        <input type="password" name="txtLoginPass" id="txtLoginPass" class="validate" value="" />
+                    </div>
+                    <div class="clear span-4"><button type="submit" value="Entrar" class="button-1-medium">Entrar</button></div>
+                    <div class="clear"><a href="<?=site_url('/recordarcontrasenia/');?>" class="link2">¿Olvido su Contraseña?</a></div>
                 </form>
             </div>
         </div>

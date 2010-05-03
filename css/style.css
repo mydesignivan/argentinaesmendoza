@@ -266,10 +266,17 @@ ul.list-item-1 li{
 /** Login
  ******************************************************************************/
 .login{
+    position: relative;
     float:right;
     margin-left: 50px;
 }
-    .login .cont-header{
+    .login .login-form{
+        position: absolute;
+        left:0;top:0;
+        width:150px;
+        height: 100px;
+        z-index: 1000;
+        border:1px solid #ccc;
     }
 
 
